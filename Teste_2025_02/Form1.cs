@@ -1,5 +1,7 @@
 using System;
+using System.Data.SqlTypes;
 using System.Web;
+using System.Xml;
 
 namespace Teste_2025_02
 {
@@ -39,9 +41,9 @@ namespace Teste_2025_02
 
         void VerificarSeNumEFibonacci()
         {
-            if(!int.TryParse(txtNumero.Text ,out int numeroParaVerificar))
+            if (!int.TryParse(txtNumero.Text, out int numeroParaVerificar))
             {
-                MessageBox.Show("Verifique o número digitado.","Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Verifique o número digitado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -61,13 +63,42 @@ namespace Teste_2025_02
                     MessageBox.Show("O número digitado pertence a sequencia Fibonacci.");
                     break;
                 }
-                if (proximo > numeroParaVerificar )
+                if (proximo > numeroParaVerificar)
                 {
                     MessageBox.Show("O número digitado não pertence a sequencia Fibonacci.");
                     break;
                 }
                 n1 = n2;
                 n2 = proximo;
+            }
+        }
+
+        // Questão 3:
+
+        private void ExercicioXmlJson()
+        {
+            listBox1.Items.Clear();
+
+            string stringDados = File.ReadAllText("dados.xml");
+            stringDados = ("<root>" + stringDados + "</root>").Replace(".", ",");
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml(stringDados);
+            XmlNodeList rowNodes = xmlDoc.SelectNodes("//row");
+            List<Row> rows = new List<Row>();
+            
+            foreach (XmlNode rowNode in rowNodes)
+            {
+                Row row = new Row
+                {
+                    Dia = int.Parse(rowNode["dia"].InnerText),
+                    Valor = double.Parse(rowNode["valor"].InnerText)
+                };
+                rows.Add(row);
+            }
+            Row[] rowArray = rows.ToArray();
+            foreach (Row row in rowArray)
+            {
+                listBox1.Items.Add($"Dia: {row.Dia}, Valor: {row.Valor}");
             }
         }
 
@@ -129,6 +160,16 @@ namespace Teste_2025_02
         private void button4_Click(object sender, EventArgs e)
         {
             VerificarSeNumEFibonacci();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            ExercicioXmlJson();
         }
     }
 }

@@ -35,6 +35,7 @@
             button4 = new Button();
             txtNumero = new TextBox();
             label1 = new Label();
+            button5 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -49,7 +50,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(68, 65);
+            button2.Location = new Point(68, 51);
             button2.Name = "button2";
             button2.Size = new Size(207, 23);
             button2.TabIndex = 1;
@@ -68,7 +69,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(68, 106);
+            button3.Location = new Point(68, 80);
             button3.Name = "button3";
             button3.Size = new Size(207, 23);
             button3.TabIndex = 3;
@@ -102,11 +103,22 @@
             label1.TabIndex = 6;
             label1.Text = "Digite um número inteiro:";
             // 
+            // button5
+            // 
+            button5.Location = new Point(68, 109);
+            button5.Name = "button5";
+            button5.Size = new Size(207, 23);
+            button5.TabIndex = 7;
+            button5.Text = "Exercício Json/Xml";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(632, 294);
+            Controls.Add(button5);
             Controls.Add(label1);
             Controls.Add(txtNumero);
             Controls.Add(button4);
@@ -131,5 +143,6 @@
         private Button button4;
         private TextBox txtNumero;
         private Label label1;
+        private Button button5;
     }
 }
