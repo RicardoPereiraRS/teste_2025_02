@@ -31,6 +31,10 @@
             button1 = new Button();
             button2 = new Button();
             listBox1 = new ListBox();
+            button3 = new Button();
+            button4 = new Button();
+            txtNumero = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -62,11 +66,51 @@
             listBox1.Size = new Size(190, 304);
             listBox1.TabIndex = 2;
             // 
+            // button3
+            // 
+            button3.Location = new Point(124, 172);
+            button3.Name = "button3";
+            button3.Size = new Size(207, 23);
+            button3.TabIndex = 3;
+            button3.Text = "Somar";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(111, 332);
+            button4.Name = "button4";
+            button4.Size = new Size(207, 23);
+            button4.TabIndex = 4;
+            button4.Text = "Fibonacci";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // txtNumero
+            // 
+            txtNumero.Location = new Point(218, 303);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(100, 23);
+            txtNumero.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(68, 306);
+            label1.Name = "label1";
+            label1.Size = new Size(144, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Digite um número inteiro:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(673, 450);
+            Controls.Add(label1);
+            Controls.Add(txtNumero);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(listBox1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -74,6 +118,7 @@
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -81,5 +126,9 @@
         private Button button1;
         private Button button2;
         private ListBox listBox1;
+        private Button button3;
+        private Button button4;
+        private TextBox txtNumero;
+        private Label label1;
     }
 }
