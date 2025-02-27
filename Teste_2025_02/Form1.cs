@@ -39,8 +39,11 @@ namespace Teste_2025_02
 
         void VerificarSeNumEFibonacci()
         {
-
-            int numeroParaVerificar = int.Parse(txtNumero.Text);
+            if(!int.TryParse(txtNumero.Text ,out int numeroParaVerificar))
+            {
+                MessageBox.Show("Verifique o número digitado.","Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             int n1 = 0;
             int n2 = 1;

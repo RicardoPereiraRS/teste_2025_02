@@ -39,7 +39,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(124, 82);
+            button1.Location = new Point(68, 22);
             button1.Name = "button1";
             button1.Size = new Size(207, 23);
             button1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(124, 129);
+            button2.Location = new Point(68, 65);
             button2.Name = "button2";
             button2.Size = new Size(207, 23);
             button2.TabIndex = 1;
@@ -61,14 +61,14 @@
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(450, 25);
+            listBox1.Location = new Point(356, 16);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(190, 304);
+            listBox1.Size = new Size(190, 214);
             listBox1.TabIndex = 2;
             // 
             // button3
             // 
-            button3.Location = new Point(124, 172);
+            button3.Location = new Point(68, 106);
             button3.Name = "button3";
             button3.Size = new Size(207, 23);
             button3.TabIndex = 3;
@@ -78,17 +78,17 @@
             // 
             // button4
             // 
-            button4.Location = new Point(111, 332);
+            button4.Location = new Point(68, 207);
             button4.Name = "button4";
-            button4.Size = new Size(207, 23);
+            button4.Size = new Size(250, 23);
             button4.TabIndex = 4;
-            button4.Text = "Fibonacci";
+            button4.Text = "Verificar se é Fibonacci";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
             // txtNumero
             // 
-            txtNumero.Location = new Point(218, 303);
+            txtNumero.Location = new Point(218, 178);
             txtNumero.Name = "txtNumero";
             txtNumero.Size = new Size(100, 23);
             txtNumero.TabIndex = 5;
@@ -96,7 +96,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(68, 306);
+            label1.Location = new Point(68, 181);
             label1.Name = "label1";
             label1.Size = new Size(144, 15);
             label1.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(673, 450);
+            ClientSize = new Size(632, 294);
             Controls.Add(label1);
             Controls.Add(txtNumero);
             Controls.Add(button4);
@@ -115,6 +115,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);

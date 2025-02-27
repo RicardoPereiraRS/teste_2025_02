@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{7DBD50A4-78C3-4529-8DAE-43BCC6008CF0}|Teste_2025_02\\Teste_2025_02.csproj|solutionrelative:teste_2025_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBD50A4-78C3-4529-8DAE-43BCC6008CF0}|Teste_2025_02\\Teste_2025_02.csproj|C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\teste_2025_02\\teste_2025_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7DBD50A4-78C3-4529-8DAE-43BCC6008CF0}|Teste_2025_02\\Teste_2025_02.csproj|c:\\users\\jose_\\documents\\desenvolvimento\\c#\\ativos\\teste_2025-02\\teste_2025_02\\teste_2025_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7DBD50A4-78C3-4529-8DAE-43BCC6008CF0}|Teste_2025_02\\Teste_2025_02.csproj|solutionrelative:teste_2025_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Teste_2025_02\\Form1.cs",
               "ToolTip": "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\teste_2025_02\\Teste_2025_02\\Form1.cs",
               "RelativeToolTip": "Teste_2025_02\\Form1.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAkwCUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAADgvzAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T19:47:42.657Z",
               "EditorCaption": ""
@@ -42,7 +42,8 @@
               "ToolTip": "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\teste_2025_02\\Teste_2025_02\\Form1.cs [Projeto]",
               "RelativeToolTip": "Teste_2025_02\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T19:35:17.152Z"
+              "WhenOpened": "2025-02-27T19:35:17.152Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }
