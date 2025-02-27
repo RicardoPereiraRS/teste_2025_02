@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\Teste_2025_02\\Teste_2025_02\\Teste_2025_02.csproj": {}
+    "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\teste_2025_02\\Teste_2025_02\\Teste_2025_02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\Teste_2025_02\\Teste_2025_02\\Teste_2025_02.csproj": {
+    "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\teste_2025_02\\Teste_2025_02\\Teste_2025_02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\Teste_2025_02\\Teste_2025_02\\Teste_2025_02.csproj",
+        "projectUniqueName": "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\teste_2025_02\\Teste_2025_02\\Teste_2025_02.csproj",
         "projectName": "Teste_2025_02",
-        "projectPath": "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\Teste_2025_02\\Teste_2025_02\\Teste_2025_02.csproj",
+        "projectPath": "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\teste_2025_02\\Teste_2025_02\\Teste_2025_02.csproj",
         "packagesPath": "C:\\Users\\jose_\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jose_\\Documents\\Desenvolvimento\\C#\\ATIVOS\\Teste_2025-02\\Teste_2025_02\\Teste_2025_02\\obj\\",
         "projectStyle": "PackageReference",
