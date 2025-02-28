@@ -81,8 +81,7 @@ namespace Teste_2025_02
             // e finalizei a etapa antes de concluir a codificação e fiquei sem acesso ao que era 
             // solicitado no exercício.
 
-            double valorMaximo;
-            double somaTotal;
+
             listBox1.Items.Clear();
 
             string stringDados = File.ReadAllText("dados.xml");
@@ -102,11 +101,16 @@ namespace Teste_2025_02
                 rows.Add(row);
             }
 
-            valorMaximo = rows.Max(item => item.Valor);
-            somaTotal = rows.Sum(item => item.Valor);
+            double valorMaximo = rows.Max(item => item.Valor);
+            double somaTotal = rows.Sum(item => item.Valor);
+            double valorDia1 = rows.Where(item => item.Dia == 1).First().Valor;
+            double valorUltimoDia = rows.Where(item => item.Dia == 30).First().Valor;
 
             listBox1.Items.Add("Valor máximo: " + valorMaximo.ToString());
             listBox1.Items.Add("Soma total: " + somaTotal.ToString());
+            listBox1.Items.Add("Valor do dia 1: " + valorDia1.ToString());
+            listBox1.Items.Add("Valor do último dia: " + valorUltimoDia.ToString());
+
         }
 
         // Questão 4:
