@@ -104,7 +104,7 @@ namespace Teste_2025_02
             double valorMaximo = rows.Max(item => item.Valor);
             double somaTotal = rows.Sum(item => item.Valor);
             double valorDia1 = rows.Where(item => item.Dia == 1).First().Valor;
-            double valorUltimoDia = rows.Where(item => item.Dia == 30).First().Valor;
+            double valorUltimoDia = rows.OrderByDescending(i => i.Dia).FirstOrDefault().Valor;
 
             listBox1.Items.Add("Valor máximo: " + valorMaximo.ToString());
             listBox1.Items.Add("Soma total: " + somaTotal.ToString());
