@@ -77,6 +77,12 @@ namespace Teste_2025_02
 
         private void ExercicioXmlJson()
         {
+            // Este exercício pode ter ficado incompleto, pois enviei o link do repositório do GIT
+            // e finalizei a etapa antes de concluir a codificação e fiquei sem acesso ao que era 
+            // solicitado no exercício.
+
+            double valorMaximo;
+            double somaTotal;
             listBox1.Items.Clear();
 
             string stringDados = File.ReadAllText("dados.xml");
@@ -85,7 +91,7 @@ namespace Teste_2025_02
             xmlDoc.LoadXml(stringDados);
             XmlNodeList rowNodes = xmlDoc.SelectNodes("//row");
             List<Row> rows = new List<Row>();
-            
+
             foreach (XmlNode rowNode in rowNodes)
             {
                 Row row = new Row
@@ -95,11 +101,12 @@ namespace Teste_2025_02
                 };
                 rows.Add(row);
             }
-            Row[] rowArray = rows.ToArray();
-            foreach (Row row in rowArray)
-            {
-                listBox1.Items.Add($"Dia: {row.Dia}, Valor: {row.Valor}");
-            }
+
+            valorMaximo = rows.Max(item => item.Valor);
+            somaTotal = rows.Sum(item => item.Valor);
+
+            listBox1.Items.Add("Valor máximo: " + valorMaximo.ToString());
+            listBox1.Items.Add("Soma total: " + somaTotal.ToString());
         }
 
         // Questão 4:
@@ -120,6 +127,9 @@ namespace Teste_2025_02
                 listBox1.Items.Add(listaDeEstados[contador] + " - " + percentual.ToString("n4") + " %");
                 contador++;
             }
+
+
+
         }
 
         private decimal CalcularPercentual(decimal valorTotal, decimal valorParcial)
